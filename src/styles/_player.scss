@@ -8,6 +8,7 @@
   .time-control {
     width: 50%;
     display: flex;
+    align-items: center;
 
     input {
       width: 100%;
@@ -62,4 +63,23 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 16px;
   width: 16px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .player {
+    .time-control {
+      width: 90%;
+      margin-top: 20px;
+    }
+
+    .play-control {
+      width: 60%;
+    }
+  }
 }
